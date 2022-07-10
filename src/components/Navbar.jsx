@@ -2,9 +2,8 @@ import { useState } from "react";
 import Logo from "../assets/logo.png";
 import { FaBars, FaTimes, FaLinkedin, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 
-const links = ["about", "projects", "contact"];
+const links = ["about", "skills", "projects", "contact"];
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -14,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-[6rem] flex justify-between items-center px-5 bg-[#008080] text-gray-400 font-medium">
+    <div className="fixed w-full h-[6rem] flex justify-between items-center px-5 bg-teal-500 text-slate-100 text-lg z-10">
       <div>
         <img src={Logo} alt="Logo" style={{ width: "4rem" }} />
       </div>
@@ -26,8 +25,15 @@ const Navbar = () => {
       </ul>
 
       {/* Burger menu */}
-      <div onClick={handleClick} className="md:hidden z-10">
-        {!navbar ? <FaBars /> : <FaTimes />}
+      <div
+        onClick={handleClick}
+        className="md:hidden z-10 text-2xl cursor-pointer"
+      >
+        {!navbar ? (
+          <FaBars className="hover:text-teal-300 duration-300" />
+        ) : (
+          <FaTimes className="hover:text-teal-300 duration-300" />
+        )}
       </div>
 
       {/* Mobile menu */}
@@ -35,12 +41,15 @@ const Navbar = () => {
         className={
           !navbar
             ? "hidden"
-            : "absolute top-0 left-0 h-screen w-full bg-[#a52a2a] text-gray-400 flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 h-screen w-full bg-rose-500 text-slate-100 flex flex-col justify-center items-center"
         }
       >
         {links.map((link, index) => {
           return (
-            <li key={index} className="py-5 text-4xl">
+            <li
+              key={index}
+              className="py-5 text-4xl hover:text-teal-300 duration-300"
+            >
               {link}
             </li>
           );
@@ -48,14 +57,30 @@ const Navbar = () => {
       </ul>
 
       {/* Social icons */}
-      <div className="fixed flex flex-col top-[40%] left-0">
+      <div className="hidden fixed lg:flex flex-col top-[40%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-800">
             <a
-              className="flex justify-between items-center w-full text-white"
+              className="flex justify-between items-center w-full text-slate-100"
               href="/"
             >
               Linkedin <FaLinkedin size={35} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-800">
+            <a
+              className="flex justify-between items-center w-full text-slate-100"
+              href="/"
+            >
+              Github <FaGithub size={35} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-orange-300">
+            <a
+              className="flex justify-between items-center w-full text-slate-100"
+              href="/"
+            >
+              E-mail <AiOutlineMail size={35} />
             </a>
           </li>
         </ul>
