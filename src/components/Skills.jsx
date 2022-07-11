@@ -31,8 +31,15 @@ const Skills = () => {
           {images.map((item) => {
             const { id, img, title } = item;
             return (
-              <div key={id} className="shadow-md shadow-teal-700 hover:scale-110 duration-500">
-                <img className="w-20 my-4 mx-auto" src={img} alt={`${title} icon`}/>
+              <div
+                key={id}
+                className="shadow-md shadow-teal-700 hover:scale-110 duration-500"
+              >
+                <img
+                  className="w-20 my-4 mx-auto"
+                  src={img}
+                  alt={`${title} icon`}
+                />
                 <p className="my-4">{title}</p>
               </div>
             );

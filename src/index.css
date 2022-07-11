@@ -2,14 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=VT323&display=swap");
 
 @layer base {
-    body {
-        @apply font-[Oswald]
-    }
-    li {
-        @apply px-4;
-        @apply cursor-pointer
-    }
+  body {
+    @apply font-[Oswald];
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+}
+
+.card-item {
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-item:hover {
+  background-image: linear-gradient(
+    to left,
+    rgba(253, 164, 175, .9),
+    hsla(349, 89%, 60%, .9)
+  )!important;
 }
