@@ -2,6 +2,7 @@ import { useState } from "react";
 import Logo from "../assets/logo.png";
 import { FaBars, FaTimes, FaLinkedin, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import { Link } from "react-scroll";
 
 const links = ["about", "skills", "projects", "contact"];
 
@@ -18,7 +19,7 @@ const Navbar = () => {
         <img src={Logo} alt="Logo" style={{ width: "4rem" }} />
       </div>
       {/* Menu */}
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex mr-20">
         {links.map((link, index) => {
           return <li key={index}>{link}</li>;
         })}
@@ -70,7 +71,9 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-800">
             <a
               className="flex justify-between items-center w-full text-slate-100"
-              href="/"
+              href="https://github.com/miloszKubiak"
+              target="_blank"
+              rel="noreferrer"
             >
               Github <FaGithub size={35} />
             </a>

@@ -33,7 +33,7 @@ const Projects = () => {
       name="projects"
       className="w-full md:h-screen bg-teal-500 text-teal-100"
     >
-      <div className="w-full h-full mx-auto p-4 max-w-[1000px] flex flex-col justify-center">
+      <div className="w-full h-full mx-auto p-8 max-w-[1000px] flex flex-col justify-center">
         <div className="pb-8">
           <p className="inline font-bold text-4xl border-b-4 border-rose-500 text-teal-100">
             Projects
@@ -51,18 +51,18 @@ const Projects = () => {
                 className="card-item group container shadow-md rounded-md shadow-rose-500 mx-auto flex justify-center items-center"
                 style={{ backgroundImage: `url(${img})` }}
               >
-                <div className="text-center opacity-0 hover:opacity-100 duration-300">
+                <div className="h-full w-full flex flex-col justify-center text-center opacity-0 hover:opacity-100 duration-300">
                   <span className="font-bold text-2xl text-slate-100 tracking-wider">
                     {title}
                   </span>
                   <div className="text-center pt-6">
-                    <a href={`${url}`}>
-                      <button className="text-center rounded-md px-6 py-2 m-2 text-lg font-bold text-slate-100 bg-teal-500 ">
+                    <a href={`${url}`} target="_blank" rel="noreferrer">
+                      <button className="text-center rounded-md px-2 py-2 m-2 w-[30%] text-lg font-bold text-slate-100 bg-teal-500 ">
                         Demo
                       </button>
                     </a>
-                    <a href={`${githubLink}`}>
-                      <button className="text-center rounded-md px-6 py-2 m-2 text-lg font-bold text-slate-100 bg-teal-500 ">
+                    <a href={`${githubLink}`} target="_blank" rel="noreferrer">
+                      <button className="text-center rounded-md px-2 py-2 m-2 w-[30%] text-lg font-bold text-slate-100 bg-teal-500 ">
                         Code
                       </button>
                     </a>
