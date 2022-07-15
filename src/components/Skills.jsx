@@ -19,7 +19,7 @@ const Skills = () => {
   return (
     <div name="skills" className="w-full h-full bg-teal-100 text-teal-500">
       {/* main container */}
-      <div className="w-full h-full max-w-[1000px] p-4 mx-auto flex flex-col justify-center">
+      <div className="w-full h-full max-w-[1000px] p-8 mx-auto flex flex-col justify-center">
         <div>
           <p className="inline text-4xl font-bold border-b-4 border-rose-500">
             Skills
@@ -27,7 +27,7 @@ const Skills = () => {
           <p className="py-4">These are the technologies I have worked with:</p>
         </div>
         {/* elements container */}
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 py-8 text-center">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 py-4 text-center">
           {images.map((item) => {
             const { id, img, title } = item;
             return (
@@ -40,7 +40,7 @@ const Skills = () => {
                   src={img}
                   alt={`${title} icon`}
                 />
-                <p className="my-4">{title}</p>
+                <p className="my-4 font-bold">{title}</p>
               </div>
             );
           })}

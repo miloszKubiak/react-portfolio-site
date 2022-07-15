@@ -16,12 +16,20 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[6rem] flex justify-between items-center px-5 bg-teal-500 text-slate-100 text-lg z-10">
       <div>
-        <img src={Logo} alt="Logo" style={{ width: "4rem" }} />
+        <Link to="home" smooth={true} duration={500}>
+          <img src={Logo} alt="Logo" className="cursor-pointer w-16" />
+        </Link>
       </div>
       {/* Menu */}
       <ul className="hidden md:flex mr-20">
         {links.map((link, index) => {
-          return <li key={index}>{link}</li>;
+          return (
+            <li key={index}>
+              <Link to={link} smooth={true} duration={500}>
+                {link}
+              </Link>
+            </li>
+          );
         })}
       </ul>
 
@@ -51,7 +59,14 @@ const Navbar = () => {
               key={index}
               className="py-5 text-4xl hover:text-teal-300 duration-300"
             >
-              {link}
+              <Link
+                onClick={handleClick}
+                to={link}
+                smooth={true}
+                duration={500}
+              >
+                {link}
+              </Link>
             </li>
           );
         })}

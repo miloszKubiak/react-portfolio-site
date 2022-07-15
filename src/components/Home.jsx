@@ -14,8 +14,8 @@ const Home = () => {
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
           enim natus deserunt eius expedita quod iure, unde facere possimus cum!
         </p>
-        <div>
-          <button className="group flex items-center text-rose-500 border-4 border-rose-500 px-6 py-4 my-4 hover:border-teal-500 hover:text-teal-500 animate-bounce">
+        <div className="flex items-center justify-center">
+          <button className="group flex items-center rounded-md bg-rose-500 text-rose-100 px-6 py-4 my-4 hover:text-teal-100 hover:bg-teal-500 hover:scale-125 duration-300 text-xl">
             My projects
             <span className="group-hover:rotate-90 duration-300">
               <FaArrowRight className="ml-2 text-xl" />
