@@ -17,7 +17,7 @@ const images = [
 
 const Skills = () => {
   return (
-    <div name="skills" className="w-full h-full bg-teal-100 text-teal-500">
+    <div name="skills" className="w-full h-screen bg-teal-100 text-teal-500">
       {/* main container */}
       <div className="w-full h-full max-w-[1000px] p-8 mx-auto flex flex-col justify-center">
         <div>
@@ -36,7 +36,7 @@ const Skills = () => {
                 className="shadow-md shadow-teal-700 hover:scale-110 duration-500"
               >
                 <img
-                  className="w-20 my-4 mx-auto"
+                  className="w-10 my-4 mx-auto"
                   src={img}
                   alt={`${title} icon`}
                 />

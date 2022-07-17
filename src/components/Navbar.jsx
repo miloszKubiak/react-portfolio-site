@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-[6rem] flex justify-between items-center px-5 bg-teal-500 text-slate-100 text-lg z-10">
+    <div className="fixed w-full h-[6rem] flex justify-between items-center px-5 bg-rose-500 text-slate-100 text-lg z-10">
       <div>
         <Link to="home" smooth={true} duration={500}>
           <img src={Logo} alt="Logo" className="cursor-pointer w-16" />
@@ -78,7 +78,9 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-800">
             <a
               className="flex justify-between items-center w-full text-slate-100"
-              href="/"
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
             >
               Linkedin <FaLinkedin size={35} />
             </a>
@@ -94,12 +96,13 @@ const Navbar = () => {
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-orange-300">
-            <a
+            <Link
+              to="contact"
+              offset={-80}
               className="flex justify-between items-center w-full text-slate-100"
-              href="/"
             >
               E-mail <AiOutlineMail size={35} />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

@@ -1,29 +1,53 @@
 import React from "react";
-import Project1Img from "../assets/project1.jpg";
-import Project2Img from "../assets/project2.jpg";
-import Project3Img from "../assets/project3.jpg";
+import cocktails from "../assets/cocktails.jpg";
+import hackerNews from "../assets/hackerNews.jpg";
+import movieDb from "../assets/movieDb.jpg";
+import quizzly from "../assets/quizzly.jpg";
+import reactPhotos from "../assets/reactPhotos.jpg";
+import shoppingList from "../assets/shoppingList.jpg";
 
 const projects = [
   {
     id: 1,
-    img: Project1Img,
-    title: "React app",
+    img: cocktails,
+    title: "Cocktails App",
     url: "https://www.google.pl/",
-    githubLink: "https://github.com/",
+    githubLink: "https://github.com/miloszKubiak/cocktails-finder",
   },
   {
     id: 2,
-    img: Project2Img,
-    title: "Vue app",
+    img: hackerNews,
+    title: "Hacker News Clone",
     url: "https://www.google.pl/",
-    githubLink: "https://github.com/",
+    githubLink: "https://github.com/miloszKubiak/hacker-news-clone",
   },
   {
     id: 3,
-    img: Project3Img,
-    title: "Angular app",
+    img: movieDb,
+    title: "Movie DB",
     url: "https://www.google.pl/",
-    githubLink: "https://github.com/",
+    githubLink: "https://github.com/miloszKubiak/movie-db",
+  },
+  {
+    id: 4,
+    img: quizzly,
+    title: "Quizzly",
+    url: "https://www.google.pl/",
+    githubLink: "https://github.com/miloszKubiak/quizzly",
+  },
+  {
+    id: 5,
+    img: reactPhotos,
+    title: "React Photos",
+    url: "https://www.google.pl/",
+    githubLink: "https://github.com/miloszKubiak/react-photos",
+  },
+  {
+    id: 6,
+    img: shoppingList,
+    title: "Shopping List",
+    url: "https://www.google.pl/",
+    githubLink: "https://github.com/miloszKubiak/shopping-list-app",
   },
 ];
 
@@ -31,9 +55,9 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="w-full md:h-screen bg-teal-500 text-teal-100"
+      className="w-full md:h-screen py-8 bg-teal-500 text-teal-100"
     >
-      <div className="w-full h-full mx-auto p-8 max-w-[1000px] flex flex-col justify-center">
+      <div className="w-full h-screen mobile-container mx-auto p-8 max-w-[1000px] flex flex-col justify-center">
         <div className="pb-8">
           <p className="inline font-bold text-4xl border-b-4 border-rose-500 text-teal-100">
             Projects
@@ -52,10 +76,10 @@ const Projects = () => {
                 style={{ backgroundImage: `url(${img})` }}
               >
                 <div className="h-full w-full flex flex-col justify-center text-center opacity-0 hover:opacity-100 duration-300">
-                  <span className="font-bold text-2xl text-slate-100 tracking-wider">
+                  <span className="font-bold text-lg mt-2 text-slate-100 tracking-wider">
                     {title}
                   </span>
-                  <div className="text-center pt-6">
+                  <div className="text-center pt-6 mb-2">
                     <a href={`${url}`} target="_blank" rel="noreferrer">
                       <button className="text-center rounded-md px-2 py-2 m-2 w-[30%] text-lg font-bold text-slate-100 bg-teal-500 ">
                         Demo

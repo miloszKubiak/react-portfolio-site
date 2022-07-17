@@ -15,7 +15,7 @@
 }
 
 .card-item {
-  height: 250px;
+  height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,4 +27,11 @@
     rgba(253, 164, 175, .9),
     hsla(349, 89%, 60%, .9)
   )!important;
+}
+
+@media screen and (max-width: 640px) {
+  
+  .mobile-container {
+    height: 100%;
+  }
 }
