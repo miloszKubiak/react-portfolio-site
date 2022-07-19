@@ -22,7 +22,7 @@ const Contact = () => {
         <input type="text" name="name" placeholder="Name" className="p-2 bg-slate-50 outline-teal-500"/>
         <input type="email" name="email" placeholder="Email" className="my-2 p-2 bg-slate-50 outline-teal-500"/>
         <textarea className="p-2 bg-slate-50 outline-teal-500" name="message" rows="5" placeholder="Message"></textarea>
-        <button className="text-rose-100 bg-rose-500 rounded-lg hover:scale-125 hover:bg-teal-500 hover:text-teal-100 animate-pulse px-4 py-4 my-8 mx-auto flex items-center duration-200">Contact me</button>
+        <button className="text-rose-100 bg-rose-500 rounded-lg hover:scale-125 hover:bg-teal-500 hover:text-teal-100 animate-bounce px-4 py-4 my-8 mx-auto flex items-center duration-200">Contact me</button>
       </form>
     </div>
   );

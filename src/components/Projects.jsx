@@ -57,7 +57,7 @@ const Projects = () => {
       name="projects"
       className="w-full md:h-screen py-8 bg-teal-500 text-teal-100"
     >
-      <div className="w-full h-screen mobile-container mx-auto p-8 max-w-[1000px] flex flex-col justify-center">
+      <div className="w-full h-full mx-auto p-8 max-w-[1000px] flex flex-col justify-center">
         <div className="pb-8">
           <p className="inline font-bold text-4xl border-b-4 border-rose-500 text-teal-100">
             Projects
