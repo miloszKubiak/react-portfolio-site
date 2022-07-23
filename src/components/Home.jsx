@@ -15,16 +15,12 @@ const Home = () => {
           </p>
           <span className="text-8xl animate-wave">👋</span>
         </div>
-        <h1 className="mt-2 text-4xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-rose-600 to-yellow-300">
+        <h1 className="mt-2 text-4xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-rose-600 to-yellow-300">
           I'm Miłosz, nice to meet you.
         </h1>
         <h2 className="mt-2 text-2xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-amber-300 to-red-500">
           Please take look around.
         </h2>
-        {/* <p className="py-6 max-w-[700px] font-bold text-transparent bg-clip-text bg-gradient-to-br from-amber-500 to-fuchsia-400">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
-          enim natus deserunt eius expedita quod iure, unde facere possimus cum!
-        </p> */}
         <div className="flex items-center justify-center mt-6">
           <Link
             to="projects"
