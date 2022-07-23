@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed z-50 w-full h-[6rem] flex justify-between items-center px-5 bg-slate-200 ">
+    <div className="fixed z-50 w-full h-[6rem] flex justify-between items-center px-5 bg-gradient-to-br from-gray-200 to-slate-200">
       <div>
         <Link to="home" smooth={true} duration={500}>
           <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-amber-600 cursor-pointer">{`<milosh />`}</h1>
@@ -25,7 +25,7 @@ const Navbar = () => {
       <ul className="hidden md:flex mr-20">
         {links.map((link, index) => {
           return (
-            <li key={index} className="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-amber-500 hover:scale-110 hover:text-rose-400 duration-300">
+            <li key={index} className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-amber-500 hover:scale-110 hover:text-rose-400 duration-300">
               <Link to={link} smooth={true} duration={500}>
                 {link}
               </Link>
@@ -37,12 +37,12 @@ const Navbar = () => {
       {/* Burger menu */}
       <div
         onClick={handleClick}
-        className="md:hidden z-99 text-2xl cursor-pointer bg-clip-text bg-gradient-to-br from-rose-500 to-yellow-600"
+        className="md:hidden z-50 text-4xl cursor-pointer"
       >
         {!navbar ? (
-          <FaBars className="hover:text-slate-300 duration-300" />
+          <FaBars className="text-rose-400 hover:text-rose-300 hover:scale-110 duration-300" />
         ) : (
-          <FaTimes className="hover:text-slate-300 duration-300" />
+          <FaTimes className="text-slate-100 hover:text-rose-200 hover:scale-110 duration-300" />
         )}
       </div>
 
@@ -51,14 +51,14 @@ const Navbar = () => {
         className={
           !navbar
             ? "hidden"
-            : "absolute top-0 left-0 h-screen w-full bg-gradient-to-br from-pink-400 to-cyan-600 text-slate-50 flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 h-screen w-full bg-gradient-to-br from-pink-400 to-red-600 text-slate-100 flex flex-col justify-center items-center"
         }
       >
         {links.map((link, index) => {
           return (
             <li
               key={index}
-              className="py-5 text-4xl hover:text-slate-300 duration-300"
+              className="py-5 text-4xl font-bold hover:scale-110 hover:text-rose-200 duration-300"
             >
               <Link
                 onClick={handleClick}

@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="h-screen w-full p-8 flex text-center justify-center items-center bg-gradient-to-br from-yellow-100 to-amber-300"
+      className="h-screen w-full p-8 flex justify-center items-center bg-gradient-to-br from-yellow-100 to-amber-300"
     >
       <form
         method="POST"
@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="pb-2">
           <p className="inline font-bold text-4xl border-b-4 border-amber-600 text-amber-500">Contact</p>
           <p className="py-6 text-lg text-amber-500">
-            Submit the form below if you have any questions :)
+            Submit the form below if you have any questions 👍
           </p>
         </div>
         <input type="text" name="name" placeholder="Name" className="p-2 bg-slate-50 outline-amber-500"/>
