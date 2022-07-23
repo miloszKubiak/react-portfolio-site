@@ -17,18 +17,16 @@ const About = () => {
       </div>
       {/* info container */}
       <div className="w-full max-w-[1000px] mx-auto py-2 mt-2 px-4 grid sm:grid-cols-2 gap-2">
-        <img className="" src={avatar} alt="author image" />
+        <img src={avatar} alt="author image" />
         <div className="sm:text-left mt-4 ml-4">
           <p className="text-4xl font-bold">
-            Hi. I'm Miłosz, nice to meet you. Please take a look around.
+            My name is Miłosz and i'm from Poland.
           </p>
           <br />
           <p className="text-lg">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Praesentium laudantium excepturi, fuga, similique illum ad minima
-            accusantium alias vero fugiat facere eos nam nisi necessitatibus.
-            Quod nisi earum ratione dolores doloremque labore vel nam ipsum
-            tempora cupiditate! In, harum mollitia!
+            I am a computer science student and I am currently at the stage of
+            writing an engineering thesis. I am mainly interested in the frontend, but I also had a little bit of work with the backend. I'm currently learning React and want to learn TypeScript in the near future.
+            In my free time (of which there is very, very little🤣) I like playing video games, especially RPGs like the Witcher 3, Cyberpunk 2077 or World of Warcraft.
           </p>
         </div>
       </div>

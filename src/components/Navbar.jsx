@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Logo from "../assets/logo1.png";
 import { FaBars, FaTimes, FaLinkedin, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-scroll";
@@ -17,8 +16,7 @@ const Navbar = () => {
     <div className="fixed z-50 w-full h-[6rem] flex justify-between items-center px-5 bg-gradient-to-br from-gray-200 to-slate-200">
       <div>
         <Link to="home" smooth={true} duration={500}>
-          <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-amber-600 cursor-pointer">{`<milosh />`}</h1>
-          {/* <img src={Logo} alt="Logo" className="cursor-pointer w-40" /> */}
+          <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-red-500 to-pink-700 cursor-pointer">{`<milosh />`}</h1>
         </Link>
       </div>
       {/* Menu */}
@@ -74,7 +72,7 @@ const Navbar = () => {
       </ul>
 
       {/* Social icons */}
-      <div className="hidden fixed lg:flex flex-col top-[40%] left-0">
+      {/* <div className="hidden fixed lg:flex flex-col top-[40%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-800">
             <a
@@ -106,7 +104,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
