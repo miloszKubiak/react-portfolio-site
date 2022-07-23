@@ -24,8 +24,8 @@
 .card-item:hover {
   background-image: linear-gradient(
     to left,
-    rgba(253, 164, 175, .9),
-    hsla(349, 89%, 60%, .9)
+    rgba(25, 200, 130, 0.9),
+    rgba(135, 248, 229, 0.9)
   )!important;
 }
 

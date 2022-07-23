@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo1.png";
 import { FaBars, FaTimes, FaLinkedin, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-scroll";
@@ -14,17 +14,18 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-[6rem] flex justify-between items-center px-5 bg-rose-500 text-slate-100 text-lg z-10">
+    <div className="fixed z-50 w-full h-[6rem] flex justify-between items-center px-5 bg-slate-200 ">
       <div>
         <Link to="home" smooth={true} duration={500}>
-          <img src={Logo} alt="Logo" className="cursor-pointer w-16" />
+          <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-amber-600 cursor-pointer">{`<milosh />`}</h1>
+          {/* <img src={Logo} alt="Logo" className="cursor-pointer w-40" /> */}
         </Link>
       </div>
       {/* Menu */}
       <ul className="hidden md:flex mr-20">
         {links.map((link, index) => {
           return (
-            <li key={index}>
+            <li key={index} className="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-amber-500 hover:scale-110 hover:text-rose-400 duration-300">
               <Link to={link} smooth={true} duration={500}>
                 {link}
               </Link>
@@ -36,12 +37,12 @@ const Navbar = () => {
       {/* Burger menu */}
       <div
         onClick={handleClick}
-        className="md:hidden z-10 text-2xl cursor-pointer"
+        className="md:hidden z-99 text-2xl cursor-pointer bg-clip-text bg-gradient-to-br from-rose-500 to-yellow-600"
       >
         {!navbar ? (
-          <FaBars className="hover:text-teal-300 duration-300" />
+          <FaBars className="hover:text-slate-300 duration-300" />
         ) : (
-          <FaTimes className="hover:text-teal-300 duration-300" />
+          <FaTimes className="hover:text-slate-300 duration-300" />
         )}
       </div>
 
@@ -50,14 +51,14 @@ const Navbar = () => {
         className={
           !navbar
             ? "hidden"
-            : "absolute top-0 left-0 h-screen w-full bg-rose-500 text-slate-100 flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 h-screen w-full bg-gradient-to-br from-pink-400 to-cyan-600 text-slate-50 flex flex-col justify-center items-center"
         }
       >
         {links.map((link, index) => {
           return (
             <li
               key={index}
-              className="py-5 text-4xl hover:text-teal-300 duration-300"
+              className="py-5 text-4xl hover:text-slate-300 duration-300"
             >
               <Link
                 onClick={handleClick}
